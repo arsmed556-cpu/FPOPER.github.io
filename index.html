@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кафе «Бисквит» — Демопроект для пересдачи</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Кафе Бисквит">Бисквит</a>
+      <nav class="main-nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Кафе «Бисквит» — домашняя выпечка и уют</h1>
+          <p class="lead">Свежая выпечка каждый день. Доставляем тепло и вкус в каждый дом.</p>
+          <a class="btn primary" href="#menu">Посмотреть меню</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="logo.svg" alt="Логотип кафе Бисквит" width="320" height="240">
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>О нас</h2>
+      <p>Небольшое семейное кафе с авторской выпечкой и баристой, который знает любимый кофе каждого гостя.</p>
+      <div class="features grid">
+        <article class="card">
+          <h3>Свежая выпечка</h3>
+          <p>Мы печём каждый день, без консервантов.</p>
+        </article>
+        <article class="card">
+          <h3>Авторские рецепты</h3>
+          <p>Уникальные вкусы и уютная атмосфера.</p>
+        </article>
+        <article class="card">
+          <h3>Доставка</h3>
+          <p>Быстрая доставка по городу и самовывоз.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu container" id="menu">
+      <h2>Наше меню</h2>
+      <p>Небольшая подборка лучших позиций.</p>
+
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Круассан с шоколадом</h3>
+          <p class="muted">Воздушный круассан, 120 г</p>
+          <div class="price">120 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Чизкейк классический</h3>
+          <p class="muted">Порция 150 г</p>
+          <div class="price">180 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Латте</h3>
+          <p class="muted">300 мл</p>
+          <div class="price">150 ₽</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="subscribe container">
+      <h2>Подписка на новости</h2>
+      <form id="subscribe-form" class="form" action="#" method="post" novalidate>
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="email@пример.ru" required>
+
+        <button type="submit" class="btn">Подписаться</button>
+        <p class="form-note">Мы не рассылаем спам. Отписаться можно в любой момент.</p>
+      </form>
+    </section>
+
+    <section class="contacts container" id="contacts">
+      <h2>Контакты</h2>
+      <address>
+        <p>ул. Пряничная, 7<br>г. Демоград</p>
+        <p>Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+      </address>
+
+      <div class="map" aria-hidden="true">
+        <p class="muted">Здесь могла бы быть карта.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Кафе «Бисквит»</p>
+      <p class="small">Сделано в учебных целях — проект для пересдачи по дисциплине «Веб-верстка HTML/CSS».</p>
+    </div>
+  </footer>
+</body>
+</html>
